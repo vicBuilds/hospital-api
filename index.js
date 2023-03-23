@@ -1,8 +1,16 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 
 const app = express();
 const port = 9000;
 const db = require("./config/mongoose");
+
+// app.use(express.urlencoded());
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+);
 
 app.use("/", require("./routes/api/v1/index.js"));
 

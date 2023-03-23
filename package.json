@@ -1,0 +1,20 @@
+{
+  "name": "hospital-api",
+  "version": "1.0.0",
+  "description": "This is backend service for Registering Covid Patients and Doctors Treating them",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Victor Mitra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.2",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1"
+  }
+}

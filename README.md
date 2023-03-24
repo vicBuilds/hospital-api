@@ -21,7 +21,7 @@ Positive-Admit]
 
  Routes(For the version 1 of the api version) are as following:
 
-- /api/v1/doctors/register → with username and password
+- /api/v1/doctors/register → with username and password and phonenumber(optional)
 - /api/v1/doctors/login → returns the JWT to be used
 
 The following routes can only be hit by a doctor who is registered and currently logged in

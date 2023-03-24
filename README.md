@@ -13,11 +13,11 @@ Each time a patient visits, the doctor will follow 2 steps
 returns the patient info in the API)
 - After the checkup, create a Report
 Patient Report will have the following fields
-* Created by doctor
-* Status (With enums as following):
-* Can be either of: [Negative, Travelled-Quarantine, Symptoms-Quarantine,
+1. Created by doctor
+2. Status (With enums as following):
+3. Can be either of: [Negative, Travelled-Quarantine, Symptoms-Quarantine,
 Positive-Admit]
-* Date
+4. Date
 
  Routes(For the version 1 of the api version) are as following:
 

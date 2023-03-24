@@ -24,7 +24,7 @@ Positive-Admit]
 - /api/v1/doctors/register → with username and password and phone number(optional)
 - /api/v1/doctors/login → returns the JWT to be used
 
-The following routes can only be hit by a doctor who is registered and currently logged in
+The following routes can only be hit by a doctor who is registered and currently logged in:
 - /api/v1/patients/register 
 - /api/v1/patients/:id/create_report
 - /api/v1/patients/:id/all_reports → List all the reports of a patient oldest to latest

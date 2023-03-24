@@ -8,7 +8,7 @@ There can be 2 types of Users
 - Patients
 
  Doctors can log in
-- Each time a patient visits, the doctor will follow 2 steps
+Each time a patient visits, the doctor will follow 2 steps
 - Register the patient in the app (using phone number, if the patient already exists, just
 returns the patient info in the API)
 - After the checkup, create a Report

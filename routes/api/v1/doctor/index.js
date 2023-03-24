@@ -4,7 +4,7 @@ const doctorController = require("../../../../controllers/doctorController");
 
 const router = express.Router();
 
-router.get("/register", doctorController.register);
+router.post("/register", doctorController.register);
 
 router.post("/login", doctorController.login);
 

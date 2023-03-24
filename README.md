@@ -3,11 +3,11 @@
 A Basic design an API for the doctors of a Hospital which has been allocated by the
 govt for testing and quarantine + well being of COVID-19 patients(This has only api. No Frontend as of Now)
 
-- There can be 2 types of Users
+There can be 2 types of Users
 - Doctors
 - Patients
 
-- Doctors can log in
+ Doctors can log in
 - Each time a patient visits, the doctor will follow 2 steps
 - Register the patient in the app (using phone number, if the patient already exists, just
 returns the patient info in the API)
@@ -19,7 +19,7 @@ returns the patient info in the API)
 Positive-Admit]
 - Date
 
-- Routes(For the version 1 of the api version) are as following:
+ Routes(For the version 1 of the api version) are as following:
 
 - /api/v1/doctors/register → with username and password
 - /api/v1/doctors/login → returns the JWT to be used

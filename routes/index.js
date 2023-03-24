@@ -3,6 +3,6 @@ const app = express();
 
 const router = express.Router();
 
-router.use("/v1", require("./v1/index"));
+router.use("/api", require("./api/index"));
 
 module.exports = router;

@@ -7,4 +7,6 @@ router.use("/doctor", require("./doctor/index"));
 
 router.use("/patients", require("./patient/index"));
 
+router.use;
+
 module.exports = router;

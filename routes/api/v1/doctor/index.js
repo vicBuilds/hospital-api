@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const doctorController = require("../../../../controllers/doctorController");
+const doctorController = require("../../../../controllers/api/v1/doctorController");
 
 const router = express.Router();
 

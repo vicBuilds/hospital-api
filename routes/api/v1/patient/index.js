@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const passport = require("../../../../config/passport-jwt");
-const patientController = require("../../../../controllers/patientController");
+const patientController = require("../../../../controllers/api/v1/patientController");
 
 const router = express.Router();
 

@@ -12,7 +12,9 @@ app.use(
   })
 );
 
-app.use("/", require("./routes/api/v1/index.js"));
+//app.use("/", require("./routes/api/v1/index.js"));
+
+app.use("/", require("./routes/index"));
 
 app.listen(port, (err) => {
   if (err) {

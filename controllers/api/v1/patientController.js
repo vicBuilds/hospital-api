@@ -1,6 +1,6 @@
-const patients = require("../models/patient");
-const reports = require("../models/report");
-const doctors = require("../models/doctor");
+const patients = require("../../../models/patient");
+const reports = require("../../../models/report");
+const doctors = require("../../../models/doctor");
 
 /* 
  Steps to Register a Patient(Check out in the try block):
@@ -97,11 +97,7 @@ module.exports.allReports = async (req, res) => {
   try {
     let patientId = req.params.id;
 
-    let currentPatient = await patients
-      .findOne({
-        _id: patientId,
-      })
-      .select("name");
+    //console.log(patientId);
 
     let patientReports = await reports
       .find({
@@ -117,11 +113,8 @@ module.exports.allReports = async (req, res) => {
 
     //console.log(patientReports);
 
-    // let currentPatient = await patients.findOne({ _id: patientId }).populate({
-    //   path: "reports",
-    // });
-
-    // console.log("The Current Patient is ", currentPatient);
+    let currentPatient = await patients.findOne({ _id: patientId });
+    //console.log("The Current Patient is ", currentPatient.name);
 
     // if (!currentPatient) {
     //   return res.status(400).json({

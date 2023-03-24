@@ -5,14 +5,12 @@ const app = express();
 const port = 9000;
 const db = require("./config/mongoose");
 
-// app.use(express.urlencoded());
+// For parsing req.body
 app.use(
   bodyParser.urlencoded({
     extended: true,
   })
 );
-
-//app.use("/", require("./routes/api/v1/index.js"));
 
 app.use("/", require("./routes/index"));
 

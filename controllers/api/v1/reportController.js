@@ -25,7 +25,7 @@ module.exports.allReportWithStatus = async (req, res) => {
       .populate({
         path: "patient",
         model: "patients",
-        select: "name",
+        select: ["name", "phone"],
       });
 
     return res.status(200).json({

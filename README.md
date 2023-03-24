@@ -30,6 +30,9 @@ The following routes can only be hit by a doctor who is registered and currently
 - /api/v1/patients/:id/all_reports → List all the reports of a patient oldest to latest
 - /api/v1/reports/:status → List all the reports of all the patients filtered by a specific status
 
+***Note the App is currently hosted in cyclic and the link is below:
+https://good-tan-chipmunk-belt.cyclic.app
+So the Api's will work something like this: https://good-tan-chipmunk-belt.cyclic.app/api/v1/doctor/register and so on....
 
 //Use this and have fun.
 Created by: Victor Mitra

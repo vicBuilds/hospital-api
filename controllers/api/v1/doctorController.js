@@ -1,13 +1,17 @@
 const doctors = require("../../../models/doctor");
+
+//Requiring jwt for creation of token after credentials match(Checkout the login Controller)
 const jwt = require("jsonwebtoken");
 
 /*
+***Steps****
 1. Check if Doctor already exists with email as the Primary Key.
 2. If Doctor exists, send the registered email. 
 3. If the Doctor Doesn't exists create a new Doctor, email must be the Primary Key.
 4. If a new Doctor is registered send the message that User Cretion succesful.
 5. If Error send the error
 */
+
 module.exports.register = async (req, res) => {
   try {
     //console.log(req.body);
@@ -37,9 +41,9 @@ module.exports.register = async (req, res) => {
 };
 
 /*
-//Controller Action to Login a Doctor who have alrady registered.
-
-
+****Steps****
+1. Check the Crendental with those saved in the database. If it match return the JWT token.
+2. If the Credentails fon't macth send the reply.
 */
 
 module.exports.login = async (req, res) => {

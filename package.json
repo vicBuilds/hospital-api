@@ -4,7 +4,6 @@
   "description": "This is backend service for Registering Covid Patients and Doctors Treating them",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
   },
   "author": "Victor Mitra",
   "license": "ISC",
